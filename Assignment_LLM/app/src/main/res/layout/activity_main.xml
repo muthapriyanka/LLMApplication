@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:padding="16dp">
+
+    <!-- Prompt Input with a custom styled text box -->
+    <EditText
+        android:id="@+id/input_prompt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:drawablePadding="8dp"
+        android:hint="Enter your prompt"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp"
+        android:textColor="#0000FF"
+        android:textColorHint="#888888"/>
+
+
+    <!-- AI Response Output -->
+    <TextView
+        android:id="@+id/output_response"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AI response will appear here..."
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp"
+        android:textColor="#0000FF" />
+
+    <!-- ProgressBar, hidden initially -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Send Button with Send icon -->
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@android:drawable/ic_menu_send"
+        android:drawablePadding="8dp"
+        android:text="Send"
+        android:layout_marginTop="8dp"
+        android:padding="12dp"
+        android:textColor="#0000FF" />
+
+    <!-- Cancel Button with Close icon -->
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@android:drawable/ic_menu_close_clear_cancel"
+        android:drawablePadding="8dp"
+        android:text="Cancel"
+        android:layout_marginTop="8dp"
+        android:padding="12dp"
+        android:textColor="#0000FF" />
+
+</LinearLayout>
